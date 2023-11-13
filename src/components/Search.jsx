@@ -5,7 +5,7 @@ import "./Search.css";
 
 const Search = () => {
   const [searchInput, setSearchInput] = useState("");
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState("keyboard");
 
   useEffect(() => {
     setWord("");
