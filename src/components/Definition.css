@@ -119,7 +119,8 @@ hr {
     font-size: 18px;
   }
   .speech__meaning ul li span,
-  .source a {
+  .source a,
+  .example {
     font-size: 16px;
   }
   .speech__meaning {
