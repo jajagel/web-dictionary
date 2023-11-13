@@ -1,10 +1,11 @@
 .definition,
 .error,
-.loader,
-.end {
+.loader {
   margin: 24px 32px 24px 32px;
 }
-
+.end {
+  margin-top: 24px;
+}
 .loader,
 .error {
   font-size: 18px;
@@ -111,11 +112,17 @@ hr {
   }
   .speech__type,
   .pronunciation,
-  .title {
+  .title,
+  .synonym,
+  .title__synonyms,
+  .source span {
     font-size: 18px;
   }
-  .speech__meaning,
-  .synonym {
+  .speech__meaning ul li span,
+  .source a {
     font-size: 16px;
+  }
+  .speech__meaning {
+    padding-left: 24px;
   }
 }
