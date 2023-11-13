@@ -1,0 +1,121 @@
+.definition,
+.error,
+.loader,
+.end {
+  margin: 24px 32px 24px 32px;
+}
+
+.loader,
+.end {
+  font-size: 18px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word svg g {
+  fill: #a445ed;
+  cursor: pointer;
+}
+
+.word svg g:hover circle {
+  fill: var(--primary);
+  opacity: 100%;
+}
+.word svg g:hover path {
+  fill: #f4f4f4;
+}
+.pronunciation {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.speech,
+.title,
+.title__synonyms {
+  font-size: 20px;
+
+  margin-top: 24px;
+}
+.speech__type {
+  font-weight: 800;
+  font-style: italic;
+}
+.title {
+  color: var(--sub_text);
+  padding-bottom: 12px;
+}
+.speech__meaning {
+  padding-left: 40px;
+  font-size: 20px;
+}
+.speech__meaning ul li {
+  color: var(--primary);
+  line-height: 150%;
+}
+.speech__meaning ul li span {
+  font-size: 18px;
+  color: var(--text);
+}
+.title__synonyms {
+  color: var(--sub_text);
+}
+.synonyms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: baseline;
+}
+.synonym {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.synonym:hover {
+  text-decoration-line: underline;
+}
+.source {
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--sub_text);
+  display: flex;
+}
+.source a {
+  color: var(--text);
+  margin-left: 12px;
+  word-break: break-all;
+}
+.source a img {
+  margin-left: 12px;
+}
+.example {
+  color: var(--sub_text);
+  font-size: 18px;
+  font-style: italic;
+}
+hr {
+  border: 1px solid var(--search_background);
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+  }
+  .speech__type,
+  .pronunciation,
+  .title {
+    font-size: 18px;
+  }
+  .speech__meaning,
+  .synonym {
+    font-size: 16px;
+  }
+}
